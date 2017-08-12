@@ -1,9 +1,9 @@
 /*
-* @Author: SusanLu
-* @Date:   2017-08-12 20:36:04
-* @Last Modified by:   SusanLu
-* @Last Modified time: 2017-08-12 21:06:05
-*/
+ * @Author: SusanLu
+ * @Date:   2017-08-12 20:36:04
+ * @Last Modified by:   SusanLu
+ * @Last Modified time: 2017-08-12 23:03:55
+ */
 
 'use strict';
 
