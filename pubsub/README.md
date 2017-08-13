@@ -21,5 +21,12 @@ cat node_modules/express/package.json
 vi .gitignore
 //node_modules
 ```
-##### 1-3 create app.js
+##### 1-3 app.js
+##### 1-4 controllers/badges.js 
+- require models/badges.js; 
+- Badges to pub/sub socket in models
+##### 1-5 models/badges.js 
+- require redis
+- Save badges to database
+##### 1-6 lib/redis.js
 

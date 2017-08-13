@@ -1,6 +1,8 @@
 # Node Exercise from CodeSchool
 
 ### Part1 Pub/sub
+- redis
+
 
 ### Part2 
 
