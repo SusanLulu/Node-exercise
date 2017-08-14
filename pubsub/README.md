@@ -44,6 +44,8 @@ mac 下安装可以使用 homebrew，homebrew 是 mac 的包管理器
 -----------------------------
 ### 1-8  RUN (In terminal, open 4 tabs and dont close any one)
 
+![run demo](https://github.com/SusanLulu/Node-exercise/raw/master/RUN.png)
+
 ###### tab1: for Redis server(initiate from local)
 
 ``` 

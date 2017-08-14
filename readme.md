@@ -5,9 +5,9 @@
 >  
 >  Redis 客户端(client)可以订阅(sub)任意数量的频道(channel). 
 >  
->  例如当有新消息通过 PUBLISH 命令发送给频道 channel1 时， 这个消息就会被发送给订阅它的三个客户端—— client2 、 client5 和 client1 .
+>  例如: 当有新消息通过 PUBLISH 命令发送给频道 channel1 时， 这个消息就会被发送给订阅它的三个客户端—— client2 、 client5 和 client1 .
 
-##### Need these module : <function>
+##### Need these modules & their role : 
 - express : Middleware
 - Redis : No-SQL Database
 
