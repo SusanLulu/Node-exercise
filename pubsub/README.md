@@ -25,14 +25,16 @@ vi .gitignore
 ```
 ### 1-3 app.js
 ### 1-4 controllers/badges.js 
-- require models/badges.js; 
+- require models/badges
 - Badges to pub/sub socket in models
+
 ### 1-5 models/badges.js 
-- require redis
+- require lib/redis
 - Save badges to database
+
 ### 1-6 lib/redis.js
 
-### 1-7  install redis
+### 1-7  install Redis
 mac 下安装可以使用 homebrew，homebrew 是 mac 的包管理器
 
 ```
@@ -47,7 +49,7 @@ mac 下安装可以使用 homebrew，homebrew 是 mac 的包管理器
 ``` 
 redis-server /usr/local/etc/redis.conf
 ```
-###### tab2: check redis if running
+###### tab2: check Redis if running
 ```
 redis-cli
 ```
@@ -55,10 +57,9 @@ redis-cli
  ###### will see sth like this:
  > redis-cli 
  >  
- >  
  > 127.0.0.1:6379 >
 
-###### tab3: run node 
+###### tab3: run Node 
 
 ```
 node app
@@ -72,19 +73,18 @@ curl -X POST http://localhost:8000 \
 ```
 
 --------------------
-### 1-9 update redis data
+### 1-9 update Redis data
 ###### tab2-- "redis-cli"tab and add code after ">"
 
 > redis-cli 
 >  
->  
 > 127.0.0.1:6379 >
  
 
-- check redis data:
+- check Redis data:
 `LRANGE badges 0 -1`
 
-- delete data from redis:
+- delete data from Redis:
 `LPOP badges`
 
 
