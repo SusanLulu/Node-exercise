@@ -2,13 +2,13 @@
 * @Author: SusanLu
 * @Date:   2017-08-12 21:16:59
 * @Last Modified by:   SusanLu
-* @Last Modified time: 2017-08-13 15:25:41
+* @Last Modified time: 2017-08-14 09:03:00
 */
 
 
 'use strict';
 
-var _ = require('undersocre');
+var _ = require('underscore');
 var model = require('../models/badges');
 
 /*
