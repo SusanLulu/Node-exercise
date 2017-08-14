@@ -1,13 +1,13 @@
 # Pub sub server
 
-##### 1-0 create folder & initiate
+### 1-0 create folder & initiate
 ```
 mkdir pubsub
 npm init
 npm install express redis axon underscore --save
 ```
 
-##### 1-1 change express version
+### 1-1 change express version
 ```
 vi package.json
 //express: ^3.0.0
@@ -16,13 +16,13 @@ npm install
 cat node_modules/express/package.json
 ```
 
-##### 1-2 create .gitignore
+### 1-2 create .gitignore
 ```
 vi .gitignore
 //node_modules
 ```
-##### 1-3 app.js
-##### 1-4 controllers/badges.js 
+### 1-3 app.js
+### 1-4 controllers/badges.js 
 - require models/badges.js; 
 - Badges to pub/sub socket in models
 ##### 1-5 models/badges.js 
@@ -30,7 +30,7 @@ vi .gitignore
 - Save badges to database
 ##### 1-6 lib/redis.js
 
-##### 1-7  install redis
+### 1-7  install redis
 mac 下安装可以使用 homebrew，homebrew 是 mac 的包管理器
 
 ```
@@ -38,7 +38,7 @@ mac 下安装可以使用 homebrew，homebrew 是 mac 的包管理器
  npm install redis
 ```
 -----------------------------
-##### 1-8  RUN (In terminal, open 4 tab and dont close any one)
+### 1-8  RUN (In terminal, open 4 tab and dont close any one)
 
 ###### tab1: for redis server
 
@@ -46,10 +46,13 @@ mac 下安装可以使用 homebrew，homebrew 是 mac 的包管理器
 redis-server /usr/local/etc/redis.conf
 ```
 ###### tab2: check redis if running
+```
 redis-cli
+```
 
- > will see sth like this:
+ ###### will see sth like this:
  > redis-cli
+ </br>
  > 127.0.0.1:6379 >
 
 ###### tab3: run node 
@@ -66,10 +69,11 @@ curl -X POST http://localhost:8000 \
 ```
 
 --------------------
-##### 1-9 update redis data
+### 1-9 update redis data
 ###### tab2-- "redis-cli"tab and add code after ">"
 
 > redis-cli
+</br>
 > 127.0.0.1:6379 >
  
 
