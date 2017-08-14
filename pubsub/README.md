@@ -30,45 +30,48 @@ vi .gitignore
 - Save badges to database
 ##### 1-6 lib/redis.js
 
-##### 1-7 install&run redis server
+##### 1-7  install redis
+mac 下安装可以使用 homebrew，homebrew 是 mac 的包管理器
 
-###### install redis
 ```
-//mac 下安装也可以使用 homebrew，homebrew 是 mac 的包管理器
  brew install redis
  npm install redis
 ```
+-----------------------------
+##### 1-8  RUN (In terminal, open 4 tab and dont close any one)
 
-###### run redis 
+###### tab1: for redis server
 
 ``` 
 redis-server /usr/local/etc/redis.conf
-//check if running(in new tab,dont close)
-redis-cli
-/**
- * will see sth like this:
- * 
- *redis-cli
- *127.0.0.1:6379 >
- */
- 
-
 ```
-#####  1-8 run node 
+###### tab2: check redis if running
+redis-cli
+
+ > will see sth like this:
+ > redis-cli
+ > 127.0.0.1:6379 >
+
+###### tab3: run node 
 
 ```
 node app
-//in new tab 
+```
+
+###### tab4: insert data into redis
+```
 curl -X POST http://localhost:8000 \
 -H "content-type: application/json" \
 -d '[{"badge_id":"foo bar badge"}]'
 ```
 
-go back to "redis-cli"tab and add code after ">"
- ```
- redis-cli
- 127.0.0.1:6379 >
- ```
+--------------------
+##### 1-9 update redis data
+###### tab2-- "redis-cli"tab and add code after ">"
+
+> redis-cli
+> 127.0.0.1:6379 >
+ 
 
 - check redis data:
 `LRANGE badges 0 -1`
