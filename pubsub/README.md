@@ -64,19 +64,18 @@ curl -X POST http://localhost:8000 \
 -d '[{"badge_id":"foo bar badge"}]'
 ```
 
-go back to "redis-cli"tab and append below code:
-`LRANGE badges 0 -1`
- /* will look like this:
- *redis-cli
- *127.0.0.1:6379 >LRANGE badges 0 -1
- */
+go back to "redis-cli"tab and add code after ">"
+ ```
+ redis-cli
+ 127.0.0.1:6379 >
+ ```
 
-delete data from redis:
+- check redis data:
+`LRANGE badges 0 -1`
+
+- delete data from redis:
 `LPOP badges`
- /* will look like this:
- *redis-cli
- *127.0.0.1:6379 >LPOP badges 
- */
+
 
 
 
@@ -89,8 +88,8 @@ delete data from redis:
 
 ###### Reference:
 1. [redis github](https://github.com/NodeRedis/node_redis)
-2. [redis install reference/](install reference: http://www.runoob.com/redis/redis-install.html)
-[redis homepage/](http://try.redis.io) 
-[redis quickstart 1/](http://www.yiibai.com/redis/redis_quick_guide.html)
-[redis quickstart 2/](http://www.epubit.com.cn/article/200)
-[redis quickstart 3/](http://blog.jobbole.com/tag/redis/)
+2. [redis install reference/](http://www.runoob.com/redis/redis-install.html)
+- [redis homepage/](http://try.redis.io) 
+- [redis quickstart 1/](http://www.yiibai.com/redis/redis_quick_guide.html)
+- [redis quickstart 2/](http://www.epubit.com.cn/article/200)
+- [redis quickstart 3/](http://blog.jobbole.com/tag/redis/)
