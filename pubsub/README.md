@@ -11,7 +11,9 @@ npm install express redis axon underscore --save
 ```
 vi package.json
 //express: ^3.0.0
+
 npm install
+
 //check express version
 cat node_modules/express/package.json
 ```
@@ -25,10 +27,10 @@ vi .gitignore
 ### 1-4 controllers/badges.js 
 - require models/badges.js; 
 - Badges to pub/sub socket in models
-##### 1-5 models/badges.js 
+### 1-5 models/badges.js 
 - require redis
 - Save badges to database
-##### 1-6 lib/redis.js
+### 1-6 lib/redis.js
 
 ### 1-7  install redis
 mac 下安装可以使用 homebrew，homebrew 是 mac 的包管理器
@@ -38,9 +40,9 @@ mac 下安装可以使用 homebrew，homebrew 是 mac 的包管理器
  npm install redis
 ```
 -----------------------------
-### 1-8  RUN (In terminal, open 4 tab and dont close any one)
+### 1-8  RUN (In terminal, open 4 tabs and dont close any one)
 
-###### tab1: for redis server
+###### tab1: for Redis server(initiate from local)
 
 ``` 
 redis-server /usr/local/etc/redis.conf
@@ -51,8 +53,9 @@ redis-cli
 ```
 
  ###### will see sth like this:
- > redis-cli
- </br>
+ > redis-cli 
+ >  
+ >  
  > 127.0.0.1:6379 >
 
 ###### tab3: run node 
@@ -72,8 +75,9 @@ curl -X POST http://localhost:8000 \
 ### 1-9 update redis data
 ###### tab2-- "redis-cli"tab and add code after ">"
 
-> redis-cli
-</br>
+> redis-cli 
+>  
+>  
 > 127.0.0.1:6379 >
  
 
@@ -95,7 +99,7 @@ curl -X POST http://localhost:8000 \
 
 ###### Reference:
 1. [redis github](https://github.com/NodeRedis/node_redis)
-2. [redis install reference/](http://www.runoob.com/redis/redis-install.html)
+- [redis install reference/](http://www.runoob.com/redis/redis-install.html)
 - [redis homepage/](http://try.redis.io) 
 - [redis quickstart 1/](http://www.yiibai.com/redis/redis_quick_guide.html)
 - [redis quickstart 2/](http://www.epubit.com.cn/article/200)
