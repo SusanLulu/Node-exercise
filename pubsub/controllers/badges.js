@@ -2,7 +2,7 @@
 * @Author: SusanLu
 * @Date:   2017-08-12 21:16:59
 * @Last Modified by:   SusanLu
-* @Last Modified time: 2017-08-14 09:03:00
+* @Last Modified time: 2017-08-14 22:12:27
 */
 
 
@@ -19,13 +19,18 @@ exports.save = function(req,res,next){
   model.save(badges,function(err){
     if (err) return res.json(503,{ error:true });
     next();
+    model.trim();
   });
 };
 /*
 *	Badges to pub/sub socket in models
  */
-exports.send = function(){
-
+exports.send = function(req,res,next){
+   var badges = _.clone(req.body);
+   model.send(badges,function(err){
+   	if (err) return res.json(503,{ error:true });
+   	res.json(200,{error: null});
+   });
 };
 
 

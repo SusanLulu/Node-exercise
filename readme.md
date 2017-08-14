@@ -10,9 +10,14 @@
 ##### Need these modules & their role : 
 - express : Middleware
 - Redis : No-SQL Database
+- Underscore
 
 
 ### Part2 
+
+##### Need these modules & their role : 
+- socket
+- axon
 
 ###### Reference:
 1. [WatchUsBuild-ImageStreamingAppWithNodePubSubServer](https://github.com/codeschool/WatchUsBuild-ImageStreamingAppWithNodePubSubServer)

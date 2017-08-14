@@ -26,6 +26,8 @@ vi .gitignore
 ### 1-3 app.js
 ### 1-4 controllers/badges.js 
 - require models/badges
+- require underscore 
+[underscore.js introduction](http://underscorejs.org)
 - Badges to pub/sub socket in models
 
 ### 1-5 models/badges.js 
@@ -106,3 +108,6 @@ curl -X POST http://localhost:8000 \
 - [redis quickstart 1/](http://www.yiibai.com/redis/redis_quick_guide.html)
 - [redis quickstart 2/](http://www.epubit.com.cn/article/200)
 - [redis quickstart 3/](http://blog.jobbole.com/tag/redis/)
+
+2. [underscore.js](http://www.css88.com/doc/underscore/)
+- [underscore quickstart](http://www.css88.com/archives/4784)

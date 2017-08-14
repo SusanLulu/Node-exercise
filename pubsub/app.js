@@ -2,7 +2,7 @@
  * @Author: SusanLu
  * @Date:   2017-08-12 20:36:04
  * @Last Modified by:   SusanLu
- * @Last Modified time: 2017-08-14 13:21:54
+ * @Last Modified time: 2017-08-14 21:49:32
  */
 
 'use strict';
@@ -13,8 +13,6 @@ var badges = require('./controllers/badges');
 
 app.use(express.json());
 
-app.post('/', badges.save, badges.send,function(req,res){
-   res.send('\ndone\n\n');
-});
+app.post('/', badges.save, badges.send);
 
 app.listen(3000);
