@@ -10,7 +10,7 @@
   "license": "MIT",
   "devDependencies": {
     "axon": "^2.0.3",
-    "express": "^3.0.0",
+    "express": "^3.21.2",
     "redis": "^2.8.0",
     "underscore": "^1.8.3"
   }

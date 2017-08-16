@@ -2,7 +2,7 @@
 * @Author: SusanLu
 * @Date:   2017-08-12 21:16:59
 * @Last Modified by:   SusanLu
-* @Last Modified time: 2017-08-14 22:12:27
+* @Last Modified time: 2017-08-16 07:18:12
 */
 
 
@@ -32,5 +32,15 @@ exports.send = function(req,res,next){
    	res.json(200,{error: null});
    });
 };
+
+/**
+ *  Get 10 badges from model
+ */
+exports.get = function(req,res){
+  model.get(function(err,data){
+    if (err) return res.json(503,{ error:true });
+    res.json(200,data);
+  })
+}
 
 
